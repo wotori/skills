@@ -1,0 +1,6 @@
+interface:
+  display_name: "Lossless to MP3"
+  short_description: "Transcode lossless music to high-quality MP3"
+  default_prompt: "Use $lossless-to-mp3 to convert this lossless album to high-quality MP3 files beside the originals."
+policy:
+  allow_implicit_invocation: true
