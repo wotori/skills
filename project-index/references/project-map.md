@@ -240,6 +240,24 @@ Known note from 2026-05-05: `cargo build --workspace`, `cargo test --workspace`,
 
 Archived earlier Omoba Bevy crate named `omoba`. Prefer active `omoba-bevy` unless the user explicitly asks for the archive.
 
+## Solana / Anchor Contracts Index
+
+Use this table when the user asks about "contracts", "programs", Solana, Anchor, IDLs, SDK generation, or deployment/test commands.
+
+| Repository | Program crates | Program IDs from `Anchor.toml` | Default cluster | Notes |
+| --- | --- | --- | --- | --- |
+| `/Users/wotori/git/ekza/solana-avatars` | `programs/avatars`, `programs/minter` | localnet/devnet `solana_avatars = 56kfTdE1xmCkZ2eDuikD7S5Mr15nmdzQENDWfmdMVtt`; `minter = 29KLLArkfCfRGPgTh4k4qzXvR2JkkXfRnnNZTKn54TKz` | devnet | Avatar identity and avatar NFT minting. Has `app/`, `sdk/`, `scripts/`, `tests/`. |
+| `/Users/wotori/git/ekza/solana-donations` | `programs/solana-donations` | localnet `solana_donations = 7XhmW42LmPuk2gcHjjsDwGiTurWDrUFP9yff9AK4mkB4` | localnet | Donation protocol: projects, donors, top-10 stats, project treasury flow. |
+| `/Users/wotori/git/ekza/solana-ekza-space` | `programs/ekza-space` | localnet `solana_ekza_space = Bms233NNbKb5FAcsjCmmCAU98oCuBXwLrLXNE5sBRdbb` | localnet | Finite numbered Spaces as Metaplex NFTs plus PDA settings. |
+| `/Users/wotori/git/ekza/solana-stellar` | `programs/solana-stellar` | localnet `solana_stellar = 3rVXfq7LLSLqbDzvZuSrQoMytwczLj2Q8Hue62rxPZAA` | localnet | Collaborative asset universes: assets, lineage, releases, contributor shares. |
+| `/Users/wotori/git/ekza/solana-users` | `programs/users`, `programs/avatars` | devnet `users = Dpn8XGzXTGErx71SDLxuzVCDwJDKF79sE42r9qoY5Wpf`; devnet `avatars = DN2ho2mgKdvsYjnxMZNcpQabJwcGeYTYwAyX2CdkHnd9`; localnet `users = Dpn8XGzXTGErx71SDLxuzVCDwJDKF79sE42r9qoY5Wpf` | devnet | User profile/social graph contracts. Be careful: provider defaults to devnet. |
+
+Safe checks for Anchor repositories:
+
+- Start with `git status --short --branch`, `Anchor.toml`, `Cargo.toml`, `package.json`, and README.
+- Prefer `anchor test`, `yarn lint`, `make build`, or repo-specific `make test`.
+- Do not run `anchor deploy`, `make deploy`, wallet mutation, validator reset, or test-ledger deletion without explicit user approval.
+
 ### `/Users/wotori/git/ekza/solana-avatars`
 
 Anchor/Solana avatar NFT identity project with `app/`, `programs/`, `sdk/`, `scripts/`, `tests/`, and `migrations/`.
