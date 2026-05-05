@@ -24,5 +24,5 @@ Read `references/project-map.md` when you need the project list, stack, common c
 ## Safety Notes
 
 - Do not modify secrets, `.env` values, wallet files, deployment settings, or production infrastructure without explicit user approval.
-- For Solana/Anchor projects, avoid `deploy`, validator resets, and test-ledger deletion unless the user asks.
+- For Solana/Anchor projects, avoid `deploy`, validator resets, wallet changes, and test-ledger deletion unless the user asks.
 - For repo-index maintenance, update `references/project-map.md` when new local projects appear or commands change.
