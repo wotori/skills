@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Index"
+  short_description: "Map Wotori and Ekza local repositories."
+  default_prompt: "Use this skill to locate the relevant local repository, understand its stack, and choose the right verification commands before editing."
