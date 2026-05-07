@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blender Asset Pipeline"
+  short_description: "Process Blender, FBX, GLB, OBJ assets reliably."
+  default_prompt: "Use this skill to inspect, convert, split, texture, or repair Blender/FBX/GLB/OBJ 3D asset pipelines."
